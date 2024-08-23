@@ -1,0 +1,1 @@
+dotnet test -c Release -p:UseSharedCompilation=false -p:ContinuousIntegrationBuild=true -p:EmbedUntrackedSources=true   --logger:"nunit;LogFileName={assembly}.xml" --collect:"XPlat Code Coverage;DeterministicReport=true;Format=cobertura"
